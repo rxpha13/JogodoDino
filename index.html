@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" onkeydown="pular()">
-  <head>
+<html lang="pt-br">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="cache-control" content="public">
+		<meta http-equiv="x-content-type-options" content="nosniff">
+		<title>Jogo da Floresta</title>
+		<!-- Referencia CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+       
+    </head> 
 	
-	<link rel="stylesheet" href="estilo.css">
-	<link rel="stylesheet" href="style.css">
-	
-	<title>Joguinho do Dino</title>
-    <meta charset="utf-8">
-	<style>
-			body, html { 
-		    width: 100%;
-		    height: 100%;
-		    margin: 0;
-		    padding: 0;
-		    overflow: hidden;
-			}
-		</style>
-  </head>
-  <body>
-    <div id="game">
-		<div id="ceu">
-		<div id="character"></div>
-		<div id="quadrado"></div>
-		<div id="starfield"></div>
+    <body>
+        <div id="container">
+		<!-- inclui o elemento Canvas -->
+			<canvas id="field" class="container "></canvas>
 		</div>
-	</div>
-  </body>
-	<script src="script.js"></script>
-	<script src="main.js"></script>
-	<script src="star.js"></script>
-	<script src="starfield.js"></script>	
-</html>
+		
+		<script type="text/javascript" src="js/star.js"></script>
+		<script type="text/javascript" src="js/starfield.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html> 
